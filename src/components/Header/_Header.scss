@@ -1,0 +1,22 @@
+header {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  background: linear-gradient(#010101, #464341);
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  svg {
+    margin-right: 20px;
+  }
+
+  .logo {
+    svg {
+      &:first-child {
+        margin: 0 4px 0 20px;
+      }
+    }
+  }
+}

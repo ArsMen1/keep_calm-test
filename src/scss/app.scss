@@ -1,0 +1,11 @@
+@import "./fonts/fonts";
+@import "normalize";
+
+@import "allComponents";
+@import "allPage";
+@import "media";
+
+body {
+  padding-top: 60px; //Высота хедера
+  background: #e5e5e5;
+}

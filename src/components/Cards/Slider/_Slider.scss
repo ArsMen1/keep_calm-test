@@ -1,0 +1,30 @@
+.spoiler {
+  cursor: pointer;
+
+  .spoiler__title {
+    .spoiler__title-wrapper {
+      width: 335px;
+      border-bottom: 1.2px solid #000;
+      display: flex;
+      align-items: center;
+    }
+
+    .spoiler__title-text {
+      margin: 30px 0 15px 0;
+      width: 210px;
+      color: #141414;
+      font-size: 24px;
+      font-family: OrchideaPro;
+      line-height: 130%;
+    }
+  }
+
+  .spoiler__title-arrow {
+    width: 10px;
+    height: 10px;
+    border-bottom: 1px solid #141414;
+    border-right: 1px solid #141414;
+    margin-right: 0;
+    transform: rotate(-45deg);
+  }
+}
