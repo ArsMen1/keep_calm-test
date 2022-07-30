@@ -2,9 +2,13 @@ footer {
   height: 200px;
   width: 100%;
   background: #141414;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding-bottom: 20px;
-  font-family: OrchideaPro;
+  text-align: center;
+
+  span {
+    position: relative;
+    top: 68px;
+    font-family: OrchideaPro;
+    font-size: 14px;
+    line-height: 16.41;
+  }
 }

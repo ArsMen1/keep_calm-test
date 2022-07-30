@@ -3,14 +3,13 @@
 
   .spoiler__title {
     .spoiler__title-wrapper {
-      width: 335px;
-      border-bottom: 1.2px solid #000;
+      width: 375px;
       display: flex;
       align-items: center;
     }
 
     .spoiler__title-text {
-      margin: 30px 0 15px 0;
+      margin: 30px 0 15px 20px;
       width: 210px;
       color: #141414;
       font-size: 24px;
@@ -20,11 +19,88 @@
   }
 
   .spoiler__title-arrow {
+    position: relative;
+    right: 25px;
     width: 10px;
     height: 10px;
     border-bottom: 1px solid #141414;
     border-right: 1px solid #141414;
     margin-right: 0;
     transform: rotate(-45deg);
+
+    &.open {
+      transform: rotate(45deg);
+    }
+  }
+
+  .spoiler__slider {
+    display: none;
+    width: 375px;
+
+    &.open {
+      height: 550px;
+      display: block;
+    }
+
+    .spoiler__slider-slider {
+      margin-top: 50px;
+      width: 100%;
+      height: 400px;
+
+      .card {
+        width: 360px;
+        height: 550px;
+        object-fit: cover;
+
+        &.card-left,
+        &.card-right {
+          opacity: 0.3;
+          transition: 0.5s;
+        }
+
+        &.card-left {
+          transform: translate(-110%, -100%) scale(0.9);
+        }
+
+        &.card-right {
+          transform: translate(110%, -200%) scale(0.9);
+        }
+        &.card-2left,
+        &.card-2right {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .my_hr {
+    width: 335px;
+    border-bottom: 1.2px solid #000;
+  }
+}
+
+@media (max-width: 400px) {
+  .spoiler {
+    .spoiler__slider {
+      &.open {
+        height: 420px;
+      }
+      .spoiler__slider-slider {
+        .card {
+          display: block;
+          margin: 0 auto;
+          width: 261px;
+          height: 400px;
+
+          &.card-left {
+            transform: translate(-105%, -100%) scale(0.9);
+          }
+
+          &.card-right {
+            transform: translate(105%, -200%) scale(0.9);
+          }
+        }
+      }
+    }
   }
 }
