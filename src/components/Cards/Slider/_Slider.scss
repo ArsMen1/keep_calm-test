@@ -48,6 +48,8 @@
       height: 400px;
 
       .card {
+        position: relative;
+        left: 8px;
         width: 360px;
         height: 550px;
         object-fit: cover;
@@ -85,6 +87,7 @@
       &.open {
         height: 420px;
       }
+
       .spoiler__slider-slider {
         .card {
           display: block;
